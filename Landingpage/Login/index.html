@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---BOOTSTRAP CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body{
+            background: color #343a40;
+            color: white;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .login-container{
+            height: 100vh;
+
+        }
+        .login-bg{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-form{
+            background-color:black
+            ;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            color: beige;
+            padding: 2rem;
+        }
+        .form-control{
+            background-color: #495057;
+            border: 1px solid #6c757d;
+            color: beige
+        }
+        .form-control:focus{
+            background-color: #495057;
+            color: beige;
+            border-color:#007bff
+        }
+        .btn-primary{
+            background-color:#007bff;
+            border: none;
+        }
+        .btn-primary:hover{
+            background-color: #0d6efd;
+        }
+        a.text-primary{
+            color:#007bff;
+        }
+        a.text-primary:hover{
+            color:#007bff;
+        }
+    </style>
+
+</head>
+<body> 
+    <div id="app" class="container-fluid login-fluid">
+        <div class="row h-100">
+            <!--Left side-->
+            <div class="col-12 col-md-6">
+                <h1>Welcome</h1>
+            </div>
+
+            <!---right side-->
+            <div class="col-12 col-md-6">
+                <h2>Login</h2>
+                <form @submit.prevent = "login">
+                    <div class="mb-3">
+                        <label  for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="emil" v-model="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">password</label>
+                        <input type="password" class="form-control" id="password" v-model="password">
+                    </div>
+                    <div class="mb-3 d-flex justify-content-betwen">
+                        <a href="#" class="text-primary">Forgot password</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+                <p class="mt-3 text-center">
+                    Don't have an acount?<a href="#" class="text-primary">Sing up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!---VUE  JS CDN-->
+    <script src="https://unpkg.com/vue@3"></script>
+    <!----BOOTSTRAP JS CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        const app= Vue.createApp({
+            data(){
+                return{
+                    email: '',
+                    password: '',
+                    errorMensage: '',
+                    //lista de usuário habilitados
+                    users:[
+                        {email: 'a@a.com', password: 'aaa123'},
+                        {email: 'b@b.com', password: 'bbb123'},
+                        {email: 'c@c.com', password: 'ccc123'}
+                    ]
+
+                }
+            },
+            methods:{
+                login(){
+                    //verificar se usuário existe na lista
+                    const users = this.users.find(users=> users.email === this.email && users.password === this.password);
+
+                    if(users){
+                        window.location.href = 'https://gogle.com.br';
+                }else{
+                    this.errorMensage = "Invalid email or password. Please try again.";
+                }
+            }
+        })
+    
+    </script>
+</body>
+</html>
