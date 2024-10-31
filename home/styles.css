@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    padding: 1rem;
+}
+
+.carousel-item img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    width: 100%;
+    max-width: 200px;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+/* Alteração dos botões de navegação do carrossel para preto */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+}
