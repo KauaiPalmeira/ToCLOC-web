@@ -1,0 +1,250 @@
+/* Fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar TocLoc */
+.custom-navbar {
+    background-color: #FFFFFF;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Logo Texto e Ícone */
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.logo-icon {
+    height: 40px;
+    width: auto;
+    margin-left: 1px;
+}
+
+/* -------------- Barra de Pesquisa -------------- */
+.search-bar {
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.search-input {
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+/* Placeholder da Barra de Pesquisa */
+.search-input::placeholder {
+    color: #FFFFFF;
+}
+
+
+
+
+
+/* Saudação do Usuário */
+.greeting-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    margin-right: 3px;
+}
+
+/* Ícone de Menu (Sanduíche) */
+.menu-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 1px;
+    position: relative;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.menu-icon::before, .menu-icon::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+}
+
+.menu-icon::before {
+    top: 4px;
+}
+
+.menu-icon::after {
+    top: 12px;
+}
+
+/*  -------------- FIM DA NAVBAR --------------*/
+
+
+
+/* Título Principal */
+.title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Subtítulo */
+.subtitle {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Caixa de Seleção */
+.custom-select {
+    background-color: #D9D9D9;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    width: 200px;
+    height: 40px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Muda cor da borda quando foca*/
+.custom-select:focus {
+    border-color: #6c757d; 
+    outline: none;
+}
+
+
+
+
+
+
+/* Título Horário -  */
+.subtitle {
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Caixa de Horário */
+.time-box {
+    background-color: #F5F5F5;
+    border: 1px solid #C3C3C3;
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.time-input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1rem;
+    color: #000;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Quadrado Seta Azul */
+.arrow-box {
+    background-color: #0CB6FF;
+    border-radius: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-symbol {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+.subtitle {
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Botões dos dias da semana */
+.day-button {
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.day-button.active {
+    background-color: #3447F0;
+    border-color: #2600FF;
+    color: #FFFFFF;
+}
+
+
+@media (max-width: 576px) {
+    .day-button {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Texto "Repetir esse evento sempre?" */
+.repeat-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Caixa de Seleção  */
+.custom-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px; 
+    height: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Estilo da Caixa de Seleção Quando Marcada */
+.custom-checkbox:checked {
+    background-color: #D9D9D9;
+    border-color: #000000;
+}
