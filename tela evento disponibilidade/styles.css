@@ -1,0 +1,224 @@
+/* Fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+/* Navbar TocLoc */
+.custom-navbar {
+    background-color: #FFFFFF;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Logo Texto e Ícone */
+.logo-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.logo-icon {
+    height: 40px;
+    width: auto;
+    margin-left: 1px;
+}
+
+/* -------------- Barra de Pesquisa -------------- */
+.search-bar {
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.search-input {
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+/* Placeholder da Barra de Pesquisa */
+.search-input::placeholder {
+    color: #FFFFFF;
+}
+
+
+
+
+
+/* Saudação do Usuário */
+.greeting-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    margin-right: 3px;
+}
+
+/* Ícone de Menu (Sanduíche) */
+.menu-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 1px;
+    position: relative;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.menu-icon::before, .menu-icon::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 0;
+}
+
+.menu-icon::before {
+    top: 4px;
+}
+
+.menu-icon::after {
+    top: 12px;
+}
+
+/*  -------------- FIM DA NAVBAR --------------*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F9FA;
+}
+
+/* Card Principal */
+.main-card {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    width: 1357px;
+    height: 385px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Quadrado de Imagem */
+.image-box {
+    width: 385px;
+    height: 346px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-label {
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Detalhes do Card */
+.details-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.edit-button {
+    background-color: #0CB6FF;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Retângulo Cinza */
+.gray-rectangle {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Caixa de Horário */
+.time-box {
+    width: 427px;
+    height: 219px;
+    background-color: #FFFFFF;
+    border: 1px solid #C3C3C3;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Botões dos dias da semana */
+.day-button {
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.day-button.active {
+    background-color: #3447F0;
+    border-color: #2600FF;
+    color: #FFFFFF;
+}
+
+
+@media (max-width: 576px) {
+    .day-button {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Botão Adicionar */
+.add-button {
+    width: 705px;
+    height: 88px;
+    background-color: #3447F0;
+    border: none;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}

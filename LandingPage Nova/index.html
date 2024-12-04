@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar custom-navbar d-flex flex-nowrap align-items-center px-3">
+        <!-- Logo com Texto e Ícone -->
+        <div class="d-flex align-items-center me-3">
+            <span class="navbar-brand logo-text">TOCLOC</span>
+            <img src="basqueteicon.png" alt="Ícone Basquete" class="logo-icon ms-1">
+        </div>
+        <!-- Barra de Pesquisa -->
+        <form class="search-bar me-3">
+            <input type="text" class="form-control search-input w-100" placeholder="Pesquisar">
+        </form>
+        <!-- Saudação do Usuário e Ícone de Menu -->
+        <div class="user-section d-flex align-items-center">
+            <span class="greeting-text">Olá, @username!</span>
+            <div class="menu-icon ms-2"></div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da Página -->
+    <div class="container text-center mt-4">
+        <!-- Texto Principal -->
+        <h1 class="main-text">Tocou, locou, jogou!</h1>
+        
+        <!-- Cards -->
+        <div class="d-flex flex-column align-items-center mt-4">
+            <div class="card custom-card mb-3">
+                <img src="quadra1.png" alt="Quadra 1" class="card-img">
+                <h3 class="card-title">Quadra 1</h3>
+            </div>
+            <div class="card custom-card mb-3">
+                <img src="quadra2.png" alt="Quadra 2" class="card-img">
+                <h3 class="card-title">Quadra 2</h3>
+            </div>
+            <div class="card custom-card mb-3">
+                <img src="quadra3.png" alt="Quadra 3" class="card-img">
+                <h3 class="card-title">Quadra 3</h3>
+            </div>
+        </div>
+        
+        <!-- Botão Suas Reservas -->
+        <button class="custom-button mt-4" onclick="location.href='reservas.html'">Suas Reservas</button>
+    </div>
+</body>
+</html>
